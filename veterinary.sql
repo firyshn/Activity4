@@ -69,3 +69,16 @@ VALUES
 (8, 'Dora', 'Explorer', 'Japan', 09926783528, 'doraexplorer@gmail.com'),
 (9, 'Angel', 'Vargas', 'Bulacan', 0991776722, 'angelvargas@gmail.com'),
 (10, 'Ariel', 'Mermaid', 'San Juan', 0987646789, 'arielmermaid@gmail.com');
+
+INSERT INTO animals(animalid, species, breed, dateofbirth, gender, color, ownerid)
+VALUES 
+(1, 'Afghan Hound', 'Dog', 2020-01-14,'boy', 'brown', 2),
+(2, 'Bulldog' , 'Dog' , 2019-02-15,'boy', 'white', 5),
+(3, 'Airedale Terrier', 'Dog', 2018-03-22,'girl', 'black', 6),
+(4, 'Alaskan Malamute', 'Dog', 2012-04-9,'boy', 'brown', 4),
+(5, 'Affenpinschar', 'Dog', 2019-5-12,'girl', 'orange',),
+(6, 'Bernese Mountain Dog', 'Dog', 2018-06-12,'boy', 'black-white', 1),
+(7, 'Border Collie', 'Dog', 2019-07-21,'girl', 'ginger', 7),
+(8, 'Bloodhound', 'Dog', 2019-08-7,'boy', 'brown', 3),
+(9, 'Golden Retriever', 'Dog', 2022-9-14,'boy', 'yellow', 9),
+(10, 'Pug', 'Dog', 2021-10-01,'girl', 'white', 10);
