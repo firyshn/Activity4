@@ -70,18 +70,18 @@ VALUES
 (9, 'Angel', 'Vargas', 'Bulacan', 0991776722, 'angelvargas@gmail.com'),
 (10, 'Ariel', 'Mermaid', 'San Juan', 0987646789, 'arielmermaid@gmail.com');
 
-INSERT INTO animals(animalid, species, breed, dateofbirth, gender, color, ownerid)
+INSERT INTO animals(animalid, name, species, breed, dateofbirth, gender, color, ownerid)
 VALUES 
-(1, 'Afghan Hound', 'Dog', 2020-01-14,'boy', 'brown', 2),
-(2, 'Bulldog' , 'Dog' , 2019-02-15,'boy', 'white', 5),
-(3, 'Airedale Terrier', 'Dog', 2018-03-22,'girl', 'black', 6),
-(4, 'Alaskan Malamute', 'Dog', 2012-04-9,'boy', 'brown', 4),
-(5, 'Affenpinschar', 'Dog', 2019-5-12,'girl', 'orange',),
-(6, 'Bernese Mountain Dog', 'Dog', 2018-06-12,'boy', 'black-white', 1),
-(7, 'Border Collie', 'Dog', 2019-07-21,'girl', 'ginger', 7),
-(8, 'Bloodhound', 'Dog', 2019-08-7,'boy', 'brown', 3),
-(9, 'Golden Retriever', 'Dog', 2022-9-14,'boy', 'yellow', 9),
-(10, 'Pug', 'Dog', 2021-10-01,'girl', 'white', 10);
+(1, 'Russell','Afghan Hound', 'Dog', 2020-01-14,'boy', 'brown', 2),
+(2, 'Leo','Bulldog' , 'Dog' , 2019-02-15,'boy', 'white', 5),
+(3, 'Cookie','Airedale Terrier', 'Dog', 2018-03-22,'girl', 'black', 6),
+(4, 'Loki','Alaskan Malamute', 'Dog', 2012-04-9,'boy', 'brown', 4),
+(5, 'Penny','Affenpinschar', 'Dog', 2019-5-12,'girl', 'orange',),
+(6, 'Migs','Bernese Mountain Dog', 'Dog', 2018-06-12,'boy', 'black-white', 1),
+(7, 'Lily','Border Collie', 'Dog', 2019-07-21,'girl', 'ginger', 7),
+(8, 'Max','Bloodhound', 'Dog', 2019-08-7,'boy', 'brown', 3),
+(9, 'Luigi','Golden Retriever', 'Dog', 2022-9-14,'boy', 'yellow', 9),
+(10, 'Brownie','Pug', 'Dog', 2021-10-01,'girl', 'white', 10);
 
 INSERT INTO appointments(appointid, animalid, appointdate, reason)
 VALUES
@@ -95,3 +95,12 @@ VALUES
 (1.8, 8, 2025-11-17, 'Vaccination'),
 (1.9, 9, 2025-12-01, 'Vaccination'),
 (1.10, 10, 2025-12-18, 'Allergy');
+
+INSERT INTO doctors(doctorid, dfirstname, dlastname, speciality, phone, email)
+VALUES
+(1, 'Dr.Maria', 'Santos', 'General Veterinarian', '987-654-3210', 'maria@example.com'),
+(2, 'Dr.Antonio', 'Gonzales', 'Feline Specialist', '555-123-4567', 'antonio@example.com'),
+(3, 'Dr.Felipe', 'Luna', 'Orthopedic Specialist', '111-222-3333', 'felipe@example.com'),
+(4, 'Dr.Sofia', 'Reyes', 'Dermatology Specialist', '999-888-7777', 'sofia@xample.com'),
+(5, 'Dr.Luis', 'Torres', 'Surgery Specialist', '123-555-7777', 'luis@example.com'),
+(6, 'Dr.Carmen', 'Fernandez', 'Opthalmology Specialist', '333-222-1111', 'carmen@example.com');
