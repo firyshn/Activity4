@@ -44,3 +44,15 @@ CREATE TABLE invoices (
     totalamount NUMERIC(10,2)
     paymentdate TIME
 ); 
+
+CREATE TABLE medicalrecords  (
+    recordid PRIMARY KEY,
+    animalid INT,,
+    recorddate DATE,
+    doctorid INT,
+    diagnosis VARCHAR (255),
+    prescription VARCHAR (255),
+    notes VARCHAR (50)
+    FOREIGN KEY (animalid) REFERENCES animals (animalid),
+    FOREIGN KEY (doctorid) REFERENCES doctors (doctorid)
+);
