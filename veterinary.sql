@@ -76,7 +76,7 @@ VALUES
 (2, 'Leo','Bulldog' , 'Dog' , 2019-02-15,'boy', 'white', 5),
 (3, 'Cookie','Airedale Terrier', 'Dog', 2018-03-22,'girl', 'black', 6),
 (4, 'Loki','Alaskan Malamute', 'Dog', 2012-04-9,'boy', 'brown', 4),
-(5, 'Penny','Affenpinschar', 'Dog', 2019-5-12,'girl', 'orange',),
+(5, 'Penny','Affenpinschar', 'Dog', 2019-5-12,'girl', 'orange', 8),
 (6, 'Migs','Bernese Mountain Dog', 'Dog', 2018-06-12,'boy', 'black-white', 1),
 (7, 'Lily','Border Collie', 'Dog', 2019-07-21,'girl', 'ginger', 7),
 (8, 'Max','Bloodhound', 'Dog', 2019-08-7,'boy', 'brown', 3),
@@ -128,11 +128,11 @@ VALUES
     (2, 2, '2023-01-10 00:00:00', 1, 'Vaccination', 'Vaccine X', 'Administered vaccination X as per schedule'),
     (3, 3, '2023-02-02 00:00:00', 3, 'Sprained leg', 'Pain Medication', 'Rest recommended for two weeks'),
     (4, 4, '2023-02-15 00:00:00', 1, 'Dental cleaning', 'N/A', 'Completed dental cleaning procedure'),
-    (5, 5, '2023-03-10 00:00:00', 4, 'Skin infection', 'Antibiotics', 'Prescribed antibiotics for skin infection'),
+    (5, 8, '2023-03-10 00:00:00', 4, 'Skin infection', 'Antibiotics', 'Prescribed antibiotics for skin infection'),
     (6, 6, '2023-03-10 00:00:00', 2, 'Flea infestation', 'Flea Treatment', 'Administered flea treatment'),
     (7, 7, '2023-04-12 00:00:00', 1, 'Vaccination', 'Vaccine Y', 'Administered vaccination Y as per schedule'),
     (8, 8, '2023-04-18 00:00:00', 5, 'Spaying', 'N/A', 'Successfully performed spaying surgery'),
-    (9, 9, '2023-05-02 00:00:00', 4, 'Allergic reaction', 'Antihistamines', 'Allergic reaction due to food prescribed antihistamine'),
+    (9, 8, '2023-05-02 00:00:00', 4, 'Allergic reaction', 'Antihistamines', 'Allergic reaction due to food prescribed antihistamine'),
     (10, 10, '2023-05-20 00:00:00', 6, 'Conjunctivitis', 'Eye drops', 'Prescribed eye drops for conjunctivitis');
 
 ALTER TABLE owners
@@ -149,3 +149,5 @@ SELECT DISTINCT species
 FROM animals;
 
 SELECT SUM(totalamount) FROM invoices;
+
+SELECT COUNT(*) FROM appointments WHERE ownerid = 8;
