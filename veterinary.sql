@@ -103,4 +103,21 @@ VALUES
 (3, 'Dr.Felipe', 'Luna', 'Orthopedic Specialist', '111-222-3333', 'felipe@example.com'),
 (4, 'Dr.Sofia', 'Reyes', 'Dermatology Specialist', '999-888-7777', 'sofia@xample.com'),
 (5, 'Dr.Luis', 'Torres', 'Surgery Specialist', '123-555-7777', 'luis@example.com'),
-(6, 'Dr.Carmen', 'Fernandez', 'Opthalmology Specialist', '333-222-1111', 'carmen@example.com');
+(6, 'Dr.Carmen', 'Fernandez', 'Opthalmology Specialist', '333-222-1111', 'carmen@example.com'),
+(7, 'Dr.Jane', 'Masangkay', 'General Veterinarian', '985-555-1111', 'jane@example.com'),
+(8, 'Dr.Senku', 'Hernandez', 'Feline Specialist', '222-888-9865', 'senku@example.com'),
+(9, 'Dr.John', 'Alberts', 'Opthalmology Specialist', '888-210-1781', 'john@example.com'),
+(10, 'Dr.Gen', 'Obelia', 'Dermatology Specialist', '657-235-2921', 'gen@example.com');
+
+INSERT INTO invoices(invoiceid, appointid, totalamount, paymentdate)
+VALUES
+(1, 1.1, 50.00, '09:30:00'),
+(2, 1.2, 75.00, '14:15:00'),
+(3, 1.3, 100.00, '11:00:00'),
+(4, 1.4, 200.00, '13:45:00'),
+(5, 1.5, 80.00, '10:30:00'),
+(6, 1.6, 30.00, '15:00:00'),
+(7, 1.7, 75.00, '09:15:00'),
+(8, 1.8, 150.00, '16:30:00'),
+(9, 1.9, 60.00, '14:45:00'),
+(10, 1.10, 40.00, '11:30:00');
