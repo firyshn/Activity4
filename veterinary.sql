@@ -82,3 +82,16 @@ VALUES
 (8, 'Bloodhound', 'Dog', 2019-08-7,'boy', 'brown', 3),
 (9, 'Golden Retriever', 'Dog', 2022-9-14,'boy', 'yellow', 9),
 (10, 'Pug', 'Dog', 2021-10-01,'girl', 'white', 10);
+
+INSERT INTO appointments(appointid, animalid, appointdate, reason)
+VALUES
+(1.1, 1, 2025-02-01, 'Allergy'),
+(1.2, 2, 2025-05-27, 'Vaccination'),
+(1.3, 3, 2025-05-10, 'Allergy'),
+(1.4, 4, 2025-07-23, 'Vaccination'),
+(1.5, 5, 2025-07-24, 'Physical Examination'),
+(1.6, 6, 2025-09-03, 'Urinary Tract Infections'),
+(1.7, 7, 2025-09-29, 'Allergy'),
+(1.8, 8, 2025-11-17, 'Vaccination'),
+(1.9, 9, 2025-12-01, 'Vaccination'),
+(1.10, 10, 2025-12-18, 'Allergy');
