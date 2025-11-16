@@ -21,10 +21,19 @@ CREATE TABLE animals (
     FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
 );
 
-CREATE TABLE owners(
+CREATE TABLE appointments (
     appointid INT PRIMARY KEY,
     animalid INT,
     appointdate DATE,
     reason VARCHAR(255),
     FOREIGN KEY (animalid) REFERENCES animals(animalid)
+);
+
+CREATE TABLE doctors (
+    doctorid PRIMARY KEY,
+    dfirstname VARCHAR (50)
+    dlastname VARCHAR (100)
+    speciality VARCHAR (100)
+    phone VARCHAR (15)
+    email VARCHAR (100)
 );
